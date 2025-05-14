@@ -1,0 +1,73 @@
+{% extends "_base.html" %}
+
+{% block title %}Store of potions, spells and used souls{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-8">
+    <div style="background-color: rgba(0, 0, 0, 0.5); color: white; padding: 20px; border-radius: 10px;" class="content-box main-content">
+      <h1 class="main-title">Pagina Initii / Homepage</h1>
+      <p>
+        Benevenisti ad ANIMAS USITATAS & BONA MALEDICTA.
+        Ubi poenitentiae sunt nummus et moralis facultas optativa.
+
+        Inter dimensionibus occultus et in tribus regnis plerumque prohibitus, USED SOULS & CURSED GOODS est emporium tuum unum pro metaphysicis scriniis quaestionabilibus et spiritualiter instabilibus. Vexilla nostra sunt plena animarum leviter damnatarum (prae-emptae, ethice colligatae... plerumque), scrolis incantationum instabilibus, et potionibus sub quaestionabilibus lunis confectis. Sive vicinum maledicis, aut socium eldritch invocas, aut simpliciter quaeris parum vetustae ambitus, aliquid invenies ut hebdomadam tuam pervertere possis.
+      </p>
+      <p>
+        Explora selectionem nostram:
+      </p>
+      <ul>
+        <li>Animarum Usitatis – leviter damnatae, varias affectiones inclusas</li>
+        <li>Kits Hauntium Facito™ – cum liquentibus spirituum et tape spectrali</li>
+        <li>Clamores Imbuti – 3-in-1 venundati diebus Martis</li>
+        <li>Potiones quae non debent existere™ – effectus laterales certissimi</li>
+        <li>Artefacta Maledicta – inter quae Interni Clamores Speculum™</li>
+        <li>Familiaria Emotionibus Instabilis – nunc in sciurorum et corvo</li>
+      </ul>
+      <p>
+        Intrate libere et proprio periculo.
+        Non sumus responsabiles pro ullis infestations, mutationibus, aut ironia dramaticis ex emptione consequentibus.
+      </p>
+      <br>
+      <p>
+        Welcome to USED SOULS & CURSED GOODS. Where regrets are currency and morality is optional.
+      </p>
+      <p>
+        Tucked between dimensions and mostly banned in three realms, USED SOULS & CURSED GOODS is your one-stop metaphysical scrapyard for the ethically questionable and spiritually volatile. Our shelves are lined with gently tormented souls (pre-owned, ethically harvested... mostly), unstable spell scrolls, and potions brewed under questionable moons. Whether you're hexing a neighbor, summoning an eldritch roommate, or just looking for a little forbidden ambiance, we’ve got something to ruin your week.
+      </p>
+      <p>
+        Explore our selection of:
+      </p>
+      <ul>
+        <li>Used Souls – lightly damned, assorted emotions included</li>
+        <li>DIY Haunting Kits – with ghost glue and spectral tape</li>
+        <li>Bottled Screams – 3-for-1 sale on Tuesdays</li>
+        <li>Potions That Shouldn’t Exist™ – side effects guaranteed</li>
+        <li>Cursed Artifacts – including the Intern Screaming Mirror™</li>
+        <li>Emotionally Unstable Familiars – now in squirrel and crow</li>
+      </ul>
+      <p>
+        Enter freely and of your own peril.
+        We are not responsible for any hauntings, mutations, or dramatic irony that may result from purchases.
+      </p>
+      </p>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="content-box" id="account" style="background-color: rgba(0, 0, 0, 0.5); color: white; padding: 20px; border-radius: 10px;">
+      <h4>Tua Ratio / Your Account </h4>
+      {% if session.get('authenticated') %}
+        <p class="logged-in">Coniunctus ut {{ session.get('username') }} / Logged in as {{ session.get('username')}}</p>
+        <p>Per usum huius situs, pactum tuum cum nobis confirmatum est. Anima tua nunc nobis subiecta est in aeternum. Cave diligenter, nam res in cartam additae removeri non possunt, et electio tua irrevocabilis erit!</p>
+        <p>By using this site, your agreement with us is confirmed. Your soul is now subject to us for eternity. Be cautious, as items added to the cart can be removed, however they will still haunt you for life, and your choice will be irrevocable!</p>
+
+      {% else %}
+        <p class="logged-out">Non authenticatus! / Not authenticated! </p>
+      {% endif %}
+    </div>
+</div>
+
+  </div>
+</div>
+{% endblock %}

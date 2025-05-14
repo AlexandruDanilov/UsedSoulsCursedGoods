@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Soul of a Victorian Child Who Never Slept",
+    "description": "Rescued from a haunted doll at 3:07 AM. This soul manifests as cold drafts, chalky lullabies in dead languages, and inexplicable skipping noises behind you when you're alone. Known to braid hair while its host sleeps. Cannot be contained by salt, only by stern parental disappointment. Has strong opinions on chimney sweeping.",
+    "image": "images/victorian_child_soul.png",
+    "price": 23
+  },
+  {
+    "id": 2,
+    "name": "Compressed Soul Cluster: Six Failed Cult Leaders in a Jar",
+    "description": "A volatile cocktail of ego, prophecy, and extreme dietary restrictions. Shake the jar to hear six simultaneous sermons arguing about whose apocalypse was best. May inspire you to create your own religion entirely by accident. Occasionally glows and whispers We'll try again in Boise. Handle with protective gloves and an open mind.",
+    "image": "images/cult_leader_cluster.png",
+    "price": 44
+  },
+  {
+    "id": 3,
+    "name": "Soul of an Influencer Who Sold Out Mid-Sentence",
+    "description": "Once human. Now reduced to an eternal loop of half-formed product endorsements. May appear in mirrors, suggesting skincare routines that end with blood rituals. Speaks in hashtags and cries when not plugged in. Known side effects include: spontaneous brand loyalty, unboxing dreams, and summoning ring lights in times of emotional distress.",
+    "image": "images/influencer_soul.png",
+    "price": 17
+  },
+  {
+    "id": 4,
+    "name": "The Forgotten Twin (You Weren't Supposed to Know)",
+    "description": "Filed under accidental acquisition during a particularly unstable astral shipment. This soul constantly tries to reclaim what was lost by inserting itself into your baby photos, your dental records, and your mother's fondest memories. Will often whisper Don't you remember me? from inside walls. Possession may result in your handwriting shifting slightly left.",
+    "image": "images/forgotten_twin.png",
+    "price": 27
+  },
+  {
+    "id": 5,
+    "name": "Soul of a Mime Trapped Inside the Soul of a Mime",
+    "description": "An impossible recursion. A quiet scream folded in on itself, eternally pretending to escape a box that may be real. It communicates entirely through the sensation of being stared at, and you'll always feel like you're standing in the way. Unshakable sense of guilt included for free. Harmless unless you think about it too hard — then the boxes get closer.",
+    "image": "images/mime_in_mime.png",
+    "price": 11
+  },
+  {
+    "id": 6,
+    "name": "The Buy Now Soul",
+    "description": "You've already agreed to this one by reading its name. No refunds, no confirmations, no escape. This soul does not speak, but you'll feel its presence during every checkout process — both digital and physical. At some point in the next 3–5 business days, you'll receive something in return. It will be marked as Final Sale. Add him to the cart and he will just sit there, watching, waiting, judging. You can't remove him. You can't ignore him. He is the embodiment of all your fails. Have fun!",
+    "image": "images/buy_now_soul.png",
+    "price": 0
+  },
+  {
+    "id": 7,
+    "name": "Ghost Glue & Spectral Tape Starter Kit",
+    "description": "Includes translucent adhesives, ectoplasmic pins, and a roll of haunted tape that whispers every time you cut it. Ideal for low-level poltergeist crafting and entry-level hauntings. Caution: tape cannot be unstuck from souls once applied.",
+    "image": "images/ghost_glue_kit.png",
+    "price": 12
+  },
+  {
+    "id": 8,
+    "name": "Tuesday Triple-Scream Pack",
+    "description": "Three vintage screams bottled from genuine emotional breakdowns. Shake to activate. Includes one agonized, one betrayed, and one... squelchy. Not safe for children or open spaces. May attract banshees.",
+    "image": "images/scream_pack.png",
+    "price": 7
+  },
+  {
+    "id": 9,
+    "name": "Potion of Unregulated Telepathy",
+    "description": "Drink if you dare to hear what others *really* think of you, and what the fridge thinks of *you*. No refunds. Side effects include spontaneous nosebleeds and becoming the group chat's new topic.",
+    "image": "images/unregulated_telepathy.png",
+    "price": 18
+  },
+  {
+    "id": 10,
+    "name": "Intern Screaming Mirror™",
+    "description": "Your reflection, but exhausted, stressed, and screaming at corporate metaphors. Occasionally warps your face to match its despair. Banned in four HR departments. Makes Zoom meetings 400% more cursed.",
+    "image": "images/intern_screaming_mirror.png",
+    "price": 21
+  },
+  {
+    "id": 11,
+    "name": "Melancholic Crow Familiar",
+    "description": "Knows every poor decision you've ever made and judges you silently. Has opinions on your love life. Brings you dead flowers and poems it swears are original. Bonding may cause shared depression.",
+    "image": "images/melancholy_crow.png",
+    "price": 20
+  },
+  {
+    "id": 12,
+    "name": "Anxious Squirrel Familiar",
+    "description": "Twitchy, cursed, and constantly apologizing for things it hasn't done yet. Steals shiny objects, then forgets why. Communicates exclusively through erratic eye contact. Occasionally combusts from stress.",
+    "image": "images/anxious_squirrel.png",
+    "price": 16
+  },
+  {
+    "id": 13,
+    "name": "The Mirror That Remembers You",
+    "description": "Forged in a sleep-deprived fever between identity and oblivion, this fractured mirror doesn't reflect — it recalls. Every time you look into it, it shows a different version of you: the one you were, the one you feared, the one you tried to forget. Occasionally whispers your name in voices not your own. Etched with initials you don't remember carving. Once cracked, it begins showing others what you've hidden from yourself. Comes with a small key that doesn't open anything you own.",
+    "image": "images/mirror_that_remembers.png",
+    "price": 33
+  },
+  {
+    "id": 14,
+    "name": "The Soul of a Cat Who Knows Too Much",
+    "description": "This feline spirit has seen things. It knows your secrets, your fears, and the exact moment you thought about adopting a dog. It will stare at you with judgmental eyes while knocking over your favorite mug. Comes with a side of existential dread.",
+    "image": "images/cat_soul.png",
+    "price": 19
+  }
+  
+]

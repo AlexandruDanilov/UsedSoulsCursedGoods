@@ -1,0 +1,72 @@
+{% extends "_base.html" %}
+
+{% block title %}Shopping Cart{% endblock %}
+
+{% block content %}
+<h1>Your Shopping Cart</h1>
+
+{% if cart_items %}
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Image</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Total</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in cart_items %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td><img src="/public/{{ item.image }}" style="width:20%;"></td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.price }}</td>
+            <td>{{ item.total }}</td>
+        </tr>
+        {% endfor %}
+        <tr>
+            <td colspan="4" class="text-right"><strong>Total Price:</strong></td>
+            <td><strong>{{ total_price }}</strong></td>
+        </tr>
+    </tbody>
+</table>
+
+<form id="checkoutForm" method="post" action="{{ url_for('orders_api.save_order') }}" class="mt-4">
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="address">Shipping Address</label>
+        <textarea class="form-control" id="address" name="address" rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+        <label for="payment">Payment Method</label>
+        <select class="form-control" id="payment" name="payment" required>
+            <option value="card">card</option>
+            <option value="bank transfer">bank transfer</option>
+            <option value="pain and suffering">pain and suffering</option>
+            <option value="soul">soul</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-dark mt-3">Save Information and Complete Purchase</button>
+</form>
+
+
+<div style="height: 150px;"></div>
+
+
+{% else %}
+<p>Your cart is empty.</p>
+{% endif %}
+{% endblock %}

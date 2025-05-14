@@ -1,0 +1,36 @@
+[
+    {
+        "id": "dffa7525-f189-4608-9d5b-548c52dbbf88",
+        "cart": {
+            "1": 1,
+            "2": 2,
+            "4": 1,
+            "13": 3,
+            "12": 4
+        },
+        "account_details": {
+            "name": "test_purchase",
+            "email": "test@gmail.com",
+            "address": "test address",
+            "phone": "07testphone",
+            "payment": "bank transfer"
+        },
+        "logged_user": "test",
+        "timestamp": "2025-05-14T16:40:36.787763"
+    },
+    {
+        "id": "e209299a-4ef9-4099-8572-00f1aaa69142",
+        "cart": {
+            "1": 1
+        },
+        "account_details": {
+            "name": "lol",
+            "email": "no@gmail.com",
+            "address": "haha",
+            "phone": "no",
+            "payment": "card"
+        },
+        "logged_user": null,
+        "timestamp": "2025-05-14T17:41:48.794208"
+    }
+]

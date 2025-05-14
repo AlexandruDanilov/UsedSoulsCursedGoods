@@ -1,0 +1,62 @@
+{% extends "_base.html" %}
+
+{% block title %}Store of potions, spells and used souls{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-8">
+    <div style="background-color: rgba(0, 0, 0, 0.5); color: white; padding: 20px; border-radius: 10px;" class="content-box main-content">
+      <h1 class="main-title">Praesentes Oblationes / Current Offers</h1>
+      {% for product in products %}
+        <div class="product" style="margin-bottom: 20px;">
+          <h3 class="my-4" style="text-decoration: underline;">{{ product.name }}</h3>
+          <div class="row caption" style="background-color: rgba(0, 0, 0, 0.5); color: white; padding: 10px; border-radius: 5px;">
+            <div class="col-md-4">
+              <img src="{{ url_for('static', filename=product.image) }}" style="width: 100%; border-radius: 10px;">
+            </div>
+            <div class="col-md-8">
+              <p>{{ product.description }}</p>
+              <p><strong>Price:</strong> {{ product.price }}$</p>
+              <button class="btn btn-dark" onclick="addToCart('{{ product.id }}')">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="content-box" id="account" style="background-color: rgba(0, 0, 0, 0.5); color: white; padding: 20px; border-radius: 10px;">
+      <h4>Tua Ratio / Your Account </h4>
+      {% if session.get('authenticated') %}
+        <p class="logged-in">Coniunctus ut {{ session.get('username') }} / Logged in as {{ session.get('username')}}</p>
+        <p>Per usum huius situs, pactum tuum cum nobis confirmatum est. Anima tua nunc nobis subiecta est in aeternum. Cave diligenter, nam res in cartam additae removeri non possunt, et electio tua irrevocabilis erit!</p>
+        <p>By using this site, your agreement with us is confirmed. Your soul is now subject to us for eternity. Be cautious, as items added to the cart can be removed, however they will still haunt you for life, and your choice will be irrevocable!</p>
+      {% else %}
+        <p class="logged-out">Non authenticatus! / Not authenticated! </p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<script>
+  function addToCart(productId) {
+    fetch('/cart/add-item', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ id: productId })
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.message) {
+        alert(data.message);
+      } else {
+        alert('Error adding item to cart');
+      }
+    })
+    .catch(error => console.error('Error:', error));
+  }
+</script>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends "_base.html" %}
+
+{% block title %}Order Confirmation{% endblock %}
+
+{% block content %}
+<h1>Thank You for Your Purchase!</h1>
+<div class="order-details">
+    <p><strong>Order ID:</strong> {{ order_id }}</p>
+    <p><strong>Name on the Scroll of Fate:</strong> {{ name }}</p>
+    <p><strong>Realm of Delivery:</strong> {{ address }}</p>
+    <p><strong>Tribute Method:</strong> {{ payment }}</p>
+    <p>
+        Thank you for sealing the pact. Your offering will soonly be accepted. Soon, your item shall manifest — in 3–5 business days, give or take a temporal anomaly. If the void whispers concerns or questions into your heart, our support shamans are standing by.
+    </p>
+    <p>Enjoy your new cursed companion.</p>
+    <p>May the winds of fortune guide you.</p>
+    <p>— The Used Sould & Cursed goods Store Team</p>
+
+<a href="{{ url_for('index') }}" class="btn btn-dark mt-3">Return to Store</a>
+{% endblock %}
